@@ -7,6 +7,7 @@
 
 ### How to run it
 We are using argparse so 
+
 python script.py --input_csv --out_vis --out_csv --searched_domain --reference_id
 
 -  --input_csv  Path to input CSV
@@ -18,10 +19,10 @@ python script.py --input_csv --out_vis --out_csv --searched_domain --reference_i
 
 ##### Determination of mutations 
 Script checks what mutations occurred between the sequences and the reference sequence. Script adds column called mutations to the output CSV that contains a list of mutations. A mutation is a triple RPG
-R - nucleotide in the reference sequence (single capital letter, or - )
-P - position in the reference sequence - ignoring - and counted from 1
-G - nucleotide in the sequence (single capital letter, or -) 
-** script ignores mutations containing the N character**
+- R - nucleotide in the reference sequence (single capital letter, or - )
+- P - position in the reference sequence - ignoring - and counted from 1
+- G - nucleotide in the sequence (single capital letter, or -) 
+- ** script ignores mutations containing the N character**
 
 ##### Domain presence
 You have the ability to search for a specific sequence that occurs in the genomes
